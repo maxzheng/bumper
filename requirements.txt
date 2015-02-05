@@ -1,0 +1,3 @@
+bumper-lib
+requests
+simplejson

@@ -12,23 +12,17 @@ setuptools.setup(
 
   description=open('README.rst').read(),
 
-#  entry_points={
-#    'console_scripts': [
-#      'script_name = package.module:entry_callable',
-#    ],
-#  },
+  entry_points={
+    'console_scripts': [
+      'bump = bumper:bump',
+    ],
+  },
 
   install_requires=open('requirements.txt').read(),
 
   license='MIT',
 
-  package_dir={'': 'src'},
-  packages=setuptools.find_packages('src'),
-  include_package_data=True,
-
   setup_requires=['setuptools-git'],
-
-#  scripts=['bin/cast-example'],
 
   classifiers=[
     'Development Status :: 5 - Production/Stable',
