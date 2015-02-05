@@ -7,7 +7,7 @@ Feature Summary
 ===============
 * Bumps dependencies in requirements.txt / pinned.txt to latest or specified version
 * Versions are validated against published versions in PyPI
-* Easily extensible by writing your own bumper class
+* Easily extendible by writing your own bumper class
 
 Quick Start Tutorial
 ====================
@@ -55,6 +55,7 @@ More
 ====
 
 | Documentation: http://bumper-lib.readthedocs.org/
+| workspace-tools: https://pypi.python.org/pypi/workspace-tools
 |
 | PyPI: https://pypi.python.org/pypi/bumper
 | GitHub Project: https://github.com/maxzheng/bumper
