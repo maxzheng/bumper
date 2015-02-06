@@ -10,7 +10,10 @@ setuptools.setup(
   author='Max Zheng',
   author_email='maxzheng.os @t gmail.com',
 
-  description=open('README.rst').read(),
+  description='Bump (pin/manage) your dependency requirements with ease',
+  long_description=open('README.rst').read(),
+
+  url='https://github.com/maxzheng/bumper',
 
   entry_points={
     'console_scripts': [
@@ -28,7 +31,7 @@ setuptools.setup(
     'Development Status :: 5 - Production/Stable',
 
     'Intended Audience :: Developers',
-    'Topic :: Software Development :: Development Utilities',
+    'Topic :: Software Development',
 
     'License :: OSI Approved :: MIT License',
 
