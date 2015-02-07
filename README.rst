@@ -24,7 +24,7 @@ To bump everything to latest version::
     requests==2
 
     $ bump
-    [INFO] Bumped requirements.txt: localconfig<=0.4.1 requests==2.5.1
+    [INFO] Updated requirements.txt: localconfig<=0.4.1 requests==2.5.1
 
     $ cat requirements.txt
     localconfig<=0.4.1
@@ -40,13 +40,13 @@ To bump to specific version::
 
     # Needs quote when using > or < sign they are stdout/in redirects in bash.
     $ bump 'localconfig>=0.4' requests==2.5
-    [INFO] Bumped requirements.txt: localconfig>=0.4 requests==2.5
+    [INFO] Updated requirements.txt: localconfig>=0.4 requests==2.5
 
 To show details of the bump::
 
     $ bump --verbose
     [INFO] Checking requests
-    [INFO] Bumped requirements.txt: requests==2.5.1
+    [INFO] Updated requirements.txt: requests==2.5.1
 
     requests
       2.5.1
