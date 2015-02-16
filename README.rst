@@ -7,6 +7,8 @@ Feature Summary
 ===============
 * Bumps dependencies in requirements.txt / pinned.txt to latest or specified version
 * Versions are validated against published versions in PyPI
+* Show detailed changelogs for pinned version bumps
+* Automatically pin dependency requirements from detailed changelogs
 * Easily extendible by writing your own bumper class
 
 Quick Start Tutorial
