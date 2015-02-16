@@ -5,7 +5,7 @@ import setuptools
 
 setuptools.setup(
   name='bumper',
-  version='0.1.7',
+  version='0.1.8',
 
   author='Max Zheng',
   author_email='maxzheng.os @t gmail.com',
