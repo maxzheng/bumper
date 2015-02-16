@@ -81,7 +81,7 @@ For pinned.txt, it will even pin any requirements from changes::
         * Add an example to instantiate another config
         * Raise a more descriptive error when requests.get fails
       0.2.1
-        * Updated requirements: localconfig>=0.4
+        * Require localconfig>=0.4
         * Fix API doc
         * Update changelog
 
