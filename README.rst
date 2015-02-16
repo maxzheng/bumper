@@ -60,9 +60,7 @@ To show details of the bump::
     $ bump
     [INFO] No need to bump. Everything is up to date!
 
-.. note::
-
-    In order for details to show, the package's long_description, docs_url, or url must link to the package's git/bitbucket repository where CHANGELOG.rst (or its variances: CHANGELOG|CHANGES|HISTORY|changes.md|txt) can be found at the source root or 'docs' folder.
+.. note:: In order for details to show, the package's long_description, docs_url, or url must link to the package's git/bitbucket repository where CHANGELOG.rst (or its variances: CHANGELOG|CHANGES|HISTORY|changes.md|txt) can be found at the source root or 'docs' folder.
 
 For pinned.txt, it will even pin any requirements from changes::
 
