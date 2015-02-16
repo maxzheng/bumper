@@ -24,10 +24,10 @@ To bump everything to latest version::
     requests==2
 
     $ bump
-    [INFO] Updated requirements.txt: localconfig<=0.4.1 requests==2.5.1
+    [INFO] Updated requirements.txt: requests==2.5.1
 
     $ cat requirements.txt
-    localconfig<=0.4.1
+    localconfig<=0.3
     remoteconfig
     requests==2.5.1
 
@@ -44,7 +44,7 @@ To bump to specific version::
 
 To show details of the bump::
 
-    $ bump --verbose
+    $ bump --detail
     [INFO] Checking requests
     [INFO] Updated requirements.txt: requests==2.5.1
 
@@ -60,9 +60,35 @@ To show details of the bump::
     $ bump
     [INFO] No need to bump. Everything is up to date!
 
-Easy, right?
+.. note::
+    In order for details to show, the package's long_description, docs_url, or url must link to the package's git/bitbucket repository where CHANGELOG.rst (or its variances: CHANGELOG|CHANGES|HISTORY|changes.md|txt) can be found at the source root or 'docs' folder.
 
-Want it to be even easier? Check out the integrated version in workspace-tools_ that does the commit for you.
+For pinned.txt, it will even pin any requirements from changes::
+
+    $ cat pinned.txt
+    remoteconfig==0.2
+
+    $ bump --dependencies
+    [INFO] Checking remoteconfig
+    [INFO] Changes in remoteconfig require: localconfig>=0.4
+    [INFO] Pinned localconfig==0.4.1, remoteconfig==0.2.4
+
+    remoteconfig
+      0.2.4
+        * Add py26 testing to tox
+        * Use mangled url as file name instead of base64 encode
+        * Fix tests
+      0.2.2
+        * Add an example to instantiate another config
+        * Raise a more descriptive error when requests.get fails
+      0.2.1
+        * Updated requirements: localconfig>=0.4
+        * Fix API doc
+        * Update changelog
+
+Easy and cool, right? :)
+
+Want it to be even easier? Check out the integrated version in workspace-tools_ that does the commit with the change details for you.
 
 .. _workspace-tools: https://pypi.python.org/pypi/workspace-tools
 
