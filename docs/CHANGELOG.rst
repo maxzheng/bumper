@@ -1,5 +1,14 @@
-Version 0.1.11
+Version 0.1.12
 ================================================================================
+
+* Add universal wheel config
+* Add .pytest_cache/ to ignore
+* Python 3 compatibility and tests
+* Remove use of --download-cache option
+* Remove use of --download-cache option
+
+Version 0.1.11
+--------------------------------------------------------------------------------
 
 * Require bumper-lib>=0.2.16
 
