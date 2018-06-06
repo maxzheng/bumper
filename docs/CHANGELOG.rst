@@ -1,5 +1,11 @@
-Version 0.1.12
+Version 0.1.13
 ================================================================================
+
+* Use autopip to install
+* Update venvs
+
+Version 0.1.12
+--------------------------------------------------------------------------------
 
 * Add universal wheel config
 * Add .pytest_cache/ to ignore
