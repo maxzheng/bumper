@@ -16,7 +16,8 @@ Quick Start Tutorial
 
 To install::
 
-    pip install bumper
+    sudo pip3 install autopip
+    app install bumper
 
 To bump everything to latest version::
 
